@@ -1,0 +1,204 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.back-to-top__link {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.back-to-top__img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(255, 99, 71, 0.4),
+      rgba(255, 99, 71, 0.4)
+    ),
+    url("img/elena-koycheva-PFzy4N0_R3M-unsplash.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding-top: 80px; /* increased space for navbar */
+}
+
+.header-content {
+  max-width: 600px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+header p {
+  margin: 5px 0 20px;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+section {
+  padding: 100px 20px; /* Increased padding for sections */
+}
+
+.intro {
+  background-color: #fff;
+}
+
+.intro h2 {
+  color: #ff6347;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6; /* improved readability */
+}
+
+.menu {
+  background-color: #ff6347;
+  color: white;
+}
+
+.menu h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.item {
+  background-color: white;
+  color: #ff6347;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.testimonials {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.testimonials h2 {
+  color: #ff6347;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.testimonial-item {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 50px 20px; /* Increased padding for footer */
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    gap: 10px; /* Reduce gap between items for smaller screens */
+  }
+
+  .item {
+    max-width: 100%;
+  }
+}
