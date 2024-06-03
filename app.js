@@ -81,13 +81,21 @@ if (number1 > number2) {
 }
 */
 /*
-  Q5: Read two numbers and display their sum. 
+  Q4: Read in two numbers and display the larger
 
 let num1 = Number(prompt("Enter number 1 : "));
 let num2 = Number(prompt("Enter number 2 : "));
 let larger = Math.max(num1, num2);
 alert(larger);
 */
+
+/**
+ * Q5: Read two numbers and display their sum. 
+  let num1 = Number(prompt("Enter number 1 : "));
+  let num2 = Number(prompt("Enter number 2 : "));
+  let sum = num1 + num2;
+  alert(sum);
+ */
 
 /* Q6: If you have a “Number” variable,  Your task is to print:
 
