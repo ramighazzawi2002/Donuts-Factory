@@ -22,3 +22,12 @@ if (orderType) {
 }
 
 console.log(`Order placed by ${fullName}: ${orderType} - ${orderfullName}`);
+
+// When the user answers all the questions you should save the answers in an array, it will contain [username, gender, type of Order , Order name ]
+let orderDetails = [fullName, gender, orderType, orderfullName];
+
+// Loop through the array and print the element using console (for loop)
+
+for (let i = 0; i < orderDetails.length; i++) {
+  console.log(orderDetails[i]);
+}
