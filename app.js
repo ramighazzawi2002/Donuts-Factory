@@ -1,12 +1,15 @@
 let fullName = prompt("Enter your fullName:");
 let gender = prompt("Enter your gender (male/female):");
 
-if (gender === "male") {
-  alert(`Welcome Mr. ${fullName}`);
-} else if (gender === "female") {
-  alert(`Welcome Ms. ${fullName}`);
-} else {
-  alert(`Welcome ${fullName}`);
+while (gender !== "male" || gender !== "female") {
+  gender = prompt("Enter your gender (male/female):");
+  if (gender === "male") {
+    alert(`Welcome Mr. ${fullName}`);
+    break;
+  } else if (gender === "female") {
+    alert(`Welcome Ms. ${fullName}`);
+    break;
+  }
 }
 
 let orderType = confirm(
